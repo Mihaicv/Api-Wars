@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+
+    <h1>Star Wars universe planets</h1>
+    <div>
+        <button id="previous" ><i class="fas fa-chevron-left" ></i>Previous</button>
+        <button id="next"><i class="fas fa-chevron-right"></i>Next</button>
+    </div>
+
+    <div class="jumbotron">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Diameter</th>
+                    <th scope="col">Climate</th>
+                    <th scope="col">Terrain</th>
+                    <th scope="col">Surface Water</th>
+                    <th scope="col">Population</th>
+                    <th scope="col">Residents</th>
+                </tr>
+            </thead>
+            <tbody class="planets">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div id="backdrop"></div>
+<div class="modal card" id="show-modal">
+    <div  class="modal__content">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="io" scope="col">Name</th>
+                    <th scope="col">Height</th>
+                    <th scope="col">Mass</th>
+                    <th scope="col">Hair color</th>
+                    <th scope="col">Skin color</th>
+                    <th scope="col">Eye color</th>
+                    <th scope="col">Birth year</th>
+                    <th scope="col">Gender</th>
+                </tr>
+            </thead>
+            <tbody class="modal_table_data">
+            </tbody>
+             <div class="planet"></div>
+            <div class="modal__actions">
+                <button class="btn btn--passive">X Close</button>
+            </div>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
